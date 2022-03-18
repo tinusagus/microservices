@@ -5,11 +5,6 @@ import { COMMENT_API } from './API';
 const CommentCreate = ({ postId }) => {
 	const [ content, setContent ] = useState('');
 
-	const onClick = () => {
-		console.log(postId);
-		console.log(COMMENT_API + postId + '/comments');
-	};
-
 	const onSubmit = async (event) => {
 		event.preventDefault();
 		await axios.post(COMMENT_API + postId + '/comments', {
@@ -20,9 +15,6 @@ const CommentCreate = ({ postId }) => {
 
 	return (
 		<div>
-			<button onClick={onClick} className="btn btn-primary">
-				TEST
-			</button>
 			<form onSubmit={onSubmit}>
 				<div className="form-group">
 					<label>New Comment</label>
