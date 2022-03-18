@@ -1,0 +1,7 @@
+Problem CORS (Different port between API & CLIENT)
+
+npm install cors in API
+
+index.js = 
+const cors = require('cors');
+app.use(cors()):
