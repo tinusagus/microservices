@@ -5,3 +5,5 @@ const HOSTNAME = `http://localhost:`;
 
 export const POST_API = `${HOSTNAME}` + `${PORT_POST}` + `/posts`;
 export const COMMENT_API = `${HOSTNAME}` + `${PORT_COMMENT}` + `/posts/`;
+
+console.log("test");
